@@ -43,3 +43,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+#file
+lib/data/
+lib/models/
+lib/utils/
+lib/views/habit_widgets/overall_tab.dart
