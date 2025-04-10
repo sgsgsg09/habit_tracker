@@ -1,0 +1,2 @@
+/Users/pc/GitHub/habits_tracker/android/app/.cxx/Debug/1x5la3x1/x86/CMakeFiles/edit_cache.dir
+/Users/pc/GitHub/habits_tracker/android/app/.cxx/Debug/1x5la3x1/x86/CMakeFiles/rebuild_cache.dir
