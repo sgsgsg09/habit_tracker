@@ -1,6 +1,6 @@
 {
-    "name": "slow_food",
-    "short_name": "slow_food",
+    "name": "habits_tracker",
+    "short_name": "habits_tracker",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

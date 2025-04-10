@@ -3,13 +3,13 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:slow_food/models/habit_model.dart';
-import 'package:slow_food/themes/app_theme.dart';
-import 'package:slow_food/viewmodels/habit_view_model.dart';
-import 'package:slow_food/themes/app_palette.dart';
-import 'package:slow_food/views/commons/logic.dart';
-import 'package:slow_food/views/icon_data/get_icon_data.dart';
-import 'package:slow_food/views/widgets/habit_edit_page.dart';
+import 'package:habits_tracker/models/habit_model.dart';
+import 'package:habits_tracker/themes/app_theme.dart';
+import 'package:habits_tracker/viewmodels/habit_view_model.dart';
+import 'package:habits_tracker/themes/app_palette.dart';
+import 'package:habits_tracker/views/commons/logic.dart';
+import 'package:habits_tracker/views/icon_data/get_icon_data.dart';
+import 'package:habits_tracker/views/widgets/habit_edit_page.dart';
 
 /// 진행도를 막대(progress bar) 형태로 표시하는 위젯으로 분리함.
 class ProgressCard extends StatelessWidget {

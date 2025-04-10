@@ -2,10 +2,10 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:slow_food/models/habit_model.dart';
-import 'package:slow_food/services/abstract_habit_repository.dart';
-import 'package:slow_food/services/provider_habit_repository.dart';
-import 'package:slow_food/viewmodels/habit_view_model.dart';
+import 'package:habits_tracker/models/habit_model.dart';
+import 'package:habits_tracker/services/abstract_habit_repository.dart';
+import 'package:habits_tracker/services/provider_habit_repository.dart';
+import 'package:habits_tracker/viewmodels/habit_view_model.dart';
 
 /// 실제 프로젝트의 HabitRepository 인터페이스에 맞춘 FakeHabitRepository 구현
 class FakeHabitRepository implements HabitRepository {

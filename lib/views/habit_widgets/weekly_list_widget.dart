@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:slow_food/models/habit_model.dart';
-import 'package:slow_food/themes/app_theme.dart';
-import 'package:slow_food/viewmodels/habit_view_model.dart';
-import 'package:slow_food/views/commons/logic.dart';
-import 'package:slow_food/views/icon_data/get_icon_data.dart';
+import 'package:habits_tracker/models/habit_model.dart';
+import 'package:habits_tracker/themes/app_theme.dart';
+import 'package:habits_tracker/viewmodels/habit_view_model.dart';
+import 'package:habits_tracker/views/commons/logic.dart';
+import 'package:habits_tracker/views/icon_data/get_icon_data.dart';
 
 /// 주간 탭 화면을 담당하는 위젯
 class WeeklyTab extends StatelessWidget {

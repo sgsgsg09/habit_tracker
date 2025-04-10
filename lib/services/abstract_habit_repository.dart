@@ -1,4 +1,4 @@
-import 'package:slow_food/models/habit_model.dart';
+import 'package:habits_tracker/models/habit_model.dart';
 
 //레포지토리 인터페이스.
 abstract interface class HabitRepository {
