@@ -1,6 +1,6 @@
-import 'package:slow_food/models/habit_model.dart';
-import 'package:slow_food/services/data_sources/local_habit_repository.dart';
-import 'package:slow_food/services/abstract_habit_repository.dart';
+import 'package:habits_tracker/models/habit_model.dart';
+import 'package:habits_tracker/services/data_sources/local_habit_repository.dart';
+import 'package:habits_tracker/services/abstract_habit_repository.dart';
 
 class AppHabitRepository implements HabitRepository {
   AppHabitRepository({

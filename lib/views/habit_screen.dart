@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:slow_food/views/habit_widgets/overall_tab.dart';
-import 'package:slow_food/views/habit_widgets/today_tab.dart';
-import 'package:slow_food/views/habit_widgets/weekly_list_widget.dart';
-import 'package:slow_food/resource/message/generated/l10n.dart';
+import 'package:habits_tracker/views/habit_widgets/overall_tab.dart';
+import 'package:habits_tracker/views/habit_widgets/today_tab.dart';
+import 'package:habits_tracker/views/habit_widgets/weekly_list_widget.dart';
+import 'package:habits_tracker/resource/message/generated/l10n.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

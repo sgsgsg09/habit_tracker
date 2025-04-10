@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/pc/GitHub/slow_food/android/app/.cxx/Debug/4s4w4x27/x86"
+			"value" : "/Users/pc/GitHub/habits_tracker/android/app/.cxx/Debug/4s4w4x27/x86"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -763,7 +763,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/Users/pc/GitHub/slow_food/build/app/intermediates/cxx/Debug/4s4w4x27/obj/x86"
+			"value" : "/Users/pc/GitHub/habits_tracker/build/app/intermediates/cxx/Debug/4s4w4x27/obj/x86"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1035,7 +1035,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/Users/pc/GitHub/slow_food/build/app/intermediates/cxx/Debug/4s4w4x27/obj/x86"
+			"value" : "/Users/pc/GitHub/habits_tracker/build/app/intermediates/cxx/Debug/4s4w4x27/obj/x86"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1355,7 +1355,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/pc/GitHub/slow_food/android/app/.cxx/Debug/4s4w4x27/x86"
+			"value" : "/Users/pc/GitHub/habits_tracker/android/app/.cxx/Debug/4s4w4x27/x86"
 		},
 		{
 			"name" : "Project_IS_TOP_LEVEL",

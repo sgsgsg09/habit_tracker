@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:slow_food/resource/message/generated/l10n.dart';
-import 'package:slow_food/services/data_sources/local_habit_repository.dart';
-import 'package:slow_food/themes/app_theme.dart';
-import 'package:slow_food/utils/add_helper.dart';
-import 'package:slow_food/views/habit_screen.dart';
+import 'package:habits_tracker/resource/message/generated/l10n.dart';
+import 'package:habits_tracker/services/data_sources/local_habit_repository.dart';
+import 'package:habits_tracker/themes/app_theme.dart';
+import 'package:habits_tracker/utils/add_helper.dart';
+import 'package:habits_tracker/views/habit_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() async {

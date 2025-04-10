@@ -1,6 +1,6 @@
 // lib/utils/color_utils.dart
 import 'package:flutter/material.dart';
-import 'package:slow_food/resource/message/generated/l10n.dart';
+import 'package:habits_tracker/resource/message/generated/l10n.dart';
 
 /// Hex 색상 문자열(#RRGGBB 또는 #AARRGGBB)을 [Color] 객체로 변환하는 함수
 Color parseHexColor(String colorHex) {

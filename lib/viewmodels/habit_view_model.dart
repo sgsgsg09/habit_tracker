@@ -1,7 +1,7 @@
 // habit_view_model.dart
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:slow_food/models/habit_model.dart';
-import 'package:slow_food/services/provider_habit_repository.dart';
+import 'package:habits_tracker/models/habit_model.dart';
+import 'package:habits_tracker/services/provider_habit_repository.dart';
 
 part 'habit_view_model.g.dart';
 

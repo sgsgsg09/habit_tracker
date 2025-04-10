@@ -12,7 +12,7 @@ import WidgetKit
 struct home_widgetControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(
-            kind: "com.example.slowFood.home_widget",
+            kind: "com.example.habitsTracker.home_widget",
             provider: Provider()
         ) { value in
             ControlWidgetToggle(

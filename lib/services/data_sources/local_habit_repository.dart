@@ -1,9 +1,9 @@
 //Hive 클래스 사용.
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:slow_food/models/adapters/habit_model_adapter.dart';
-import 'package:slow_food/models/habit_model.dart';
-import 'package:slow_food/services/abstract_habit_repository.dart';
+import 'package:habits_tracker/models/adapters/habit_model_adapter.dart';
+import 'package:habits_tracker/models/habit_model.dart';
+import 'package:habits_tracker/services/abstract_habit_repository.dart';
 
 class HiveService {
   static const String habitBoxName = 'habits';
