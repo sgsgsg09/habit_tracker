@@ -70,12 +70,12 @@ class TaskRemoteViewsFactory(private val context: Context) : RemoteViewsService.
             "FlutterSharedPreferences",
             Context.MODE_PRIVATE
         )
-
+ 
         // Flutter에서 prefs.setString('tasks', jsonString)을 하면
         // 안드로이드 내부적으로는 "flutter.tasks"로 저장될 가능성이 큼.
         // (버전에 따라 직접 "tasks"로 저장될 수도 있으니 확인 필요)
         val tasksString = prefs.getString("flutter.tasks", "") ?: ""
-
+       Log.d(TAG, "SharedPreferences data: $tasksString")
         if (tasksString.isEmpty()) {
             habitList = emptyList()
             return

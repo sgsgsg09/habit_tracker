@@ -172,7 +172,7 @@
 122            <intent-filter>
 123                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 124                <!-- Flutter에서 직접 브로드캐스트 보낼 때 사용할 액션 (선택사항) -->
-125                <action android:name="com.example.widgetnoteapp.UPDATE_WIDGET" />
+125                <action android:name="com.example.habits_tracker.UPDATE_WIDGET" />
 126            </intent-filter>
 127
 128            <!-- 위젯 설정 정보 연결 (task_widget_info.xml) -->

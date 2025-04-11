@@ -32,7 +32,9 @@ Future<List<HabitModel>> homeWidget(Ref ref) async {
 
 // _updateAndroidWidget이 전체 습관 리스트를 받아 처리하도록 수정
 Future<void> _updateAndroidWidget(List<HabitModel> habits) async {
-  const platform = MethodChannel('com.example.widgetnoteapp/update_widget');
+  // Android 홈 위젯과 통신할 MethodChannel 정의
+  // MainActvity.kt에 선언된 CHANNEL 값과 정확히 일치해야 함
+  const platform = MethodChannel('com.example.habits_tracker/update_widget');
 
   try {
     // 가져온 HabitModel 리스트에서 필요한 필드만 골라 Map으로 만든 뒤, JSON으로 변환
@@ -46,13 +48,19 @@ Future<void> _updateAndroidWidget(List<HabitModel> habits) async {
     }).toList();
 
     final jsonString = jsonEncode(habitMaps);
+    print('Saving widget data: $jsonString');
 
     // SharedPreferences에 저장
+    // Android 코드가 'flutter.tasks'를 찾을 것이므로 'tasks'로 저장
+    // Flutter가 자동으로 'flutter.' 접두사를 붙여 'flutter.tasks'로 저장함
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('tasks', jsonString);
-
-    // 안드로이드 위젯에 갱신 요청
+    // 저장 후 바로 데이터를 다시 읽어 확인
+    final savedData = prefs.getString('tasks');
+    print('Saved data verification: $savedData');
+    // Android 앱 위젯에 갱신 요청 보내기
     await platform.invokeMethod('updateWidget');
+    print('Widget update requested via MethodChannel');
   } catch (e) {
     print('Error updating widget: $e');
   }

@@ -2,7 +2,7 @@
 // RiverpodGenerator
 // **************************************************************************
 
-String _$homeWidgetHash() => r'33dbe3b57022116b01a89ff4fac5467e04a058b0';
+String _$homeWidgetHash() => r'e852f38473a389ac914a46d1794546ec7d33ecf8';
 
 /// See also [homeWidget].
 @ProviderFor(homeWidget)
