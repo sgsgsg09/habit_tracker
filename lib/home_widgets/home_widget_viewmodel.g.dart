@@ -6,21 +6,22 @@ part of 'home_widget_viewmodel.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$homeWidgetHash() => r'e852f38473a389ac914a46d1794546ec7d33ecf8';
+String _$homeWidgetNotifierHash() =>
+    r'83232e1edd107a66f2f3ad5922d54fc620024057';
 
-/// See also [homeWidget].
-@ProviderFor(homeWidget)
-final homeWidgetProvider = AutoDisposeFutureProvider<List<HabitModel>>.internal(
-  homeWidget,
-  name: r'homeWidgetProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$homeWidgetHash,
+/// See also [HomeWidgetNotifier].
+@ProviderFor(HomeWidgetNotifier)
+final homeWidgetNotifierProvider = AutoDisposeAsyncNotifierProvider<
+    HomeWidgetNotifier, List<HabitModel>>.internal(
+  HomeWidgetNotifier.new,
+  name: r'homeWidgetNotifierProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$homeWidgetNotifierHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-@Deprecated('Will be removed in 3.0. Use Ref instead')
-// ignore: unused_element
-typedef HomeWidgetRef = AutoDisposeFutureProviderRef<List<HabitModel>>;
+typedef _$HomeWidgetNotifier = AutoDisposeAsyncNotifier<List<HabitModel>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

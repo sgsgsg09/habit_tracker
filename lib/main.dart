@@ -15,12 +15,16 @@ void main() async {
   GoogleAdHelper.initializeAds();
   // Hive 초기화 (hive_flutter 패키지 사용)
   await HiveService().initializeHive();
+  // 앱 먼저 실행
+  final container = ProviderContainer();
 
   runApp(
     ProviderScope(
       child: MyApp(),
     ),
   );
+  // 그 다음 홈 위젯 초기화
+  await container.read(homeWidgetNotifierProvider.future);
 }
 
 class MyApp extends StatefulWidget {
@@ -38,7 +42,6 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     super.initState();
     // 애플리케이션 라이프사이클 관찰 등록
     WidgetsBinding.instance.addObserver(this);
-    // ProviderContainer 초기화 (필요한 경우, MyApp 내 또는 별도 ProviderScope 활용)
   }
 
   @override
@@ -60,12 +63,18 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     if (container != null) {
       if (state == AppLifecycleState.resumed) {
         // 앱이 포그라운드로 돌아올 때 homeWidgetProvider 업데이트 호출
-        container!.read(homeWidgetProvider);
+        container!
+            .read(homeWidgetNotifierProvider.notifier)
+            .refreshWidgetData();
         debugPrint('앱이 포그라운드로 돌아와서 homeWidgetProvider 업데이트 호출');
-      } else if (state == AppLifecycleState.paused) {
-        // 백그라운드 진입 시 처리 (필요에 따라)
-        container!.read(homeWidgetProvider);
-        debugPrint('앱이 백그라운드로 진입합니다');
+      } else if (state == AppLifecycleState.paused ||
+          state == AppLifecycleState.inactive ||
+          state == AppLifecycleState.detached) {
+        // 앱이 백그라운드로 이동하거나 종료될 때
+        container!
+            .read(homeWidgetNotifierProvider.notifier)
+            .refreshWidgetData();
+        debugPrint('앱이 백그라운드/종료 상태로 진입: $state');
       }
     }
   }

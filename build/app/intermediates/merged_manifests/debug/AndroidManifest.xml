@@ -13,8 +13,9 @@
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!--
-     Required to query activities that can process text, see:
+ Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
          https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
 
@@ -130,7 +131,13 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/task_widget_info" />
         </receiver>
-
+        <receiver
+            android:name="com.example.habits_tracker.WidgetActionReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.example.habits_tracker.INCREMENT_HABIT" />
+            </intent-filter>
+        </receiver>
         <!-- RemoteViewsService 등록 -->
         <service
             android:name="com.example.habits_tracker.TaskWidgetService"

@@ -1,17 +1,17 @@
 package com.example.habits_tracker
 
+import android.app.PendingIntent
+import android.content.Intent
 import android.content.Context
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.util.Log
+import android.view.View
 import android.widget.RemoteViews
 import android.widget.RemoteViewsService
 import org.json.JSONArray
 import org.json.JSONException
 
-/**
- * 데이터를 JSON 형태로 파싱하고, RemoteViews로 연결해주는 Factory
- */
 class TaskRemoteViewsFactory(private val context: Context) : RemoteViewsService.RemoteViewsFactory {
     private val TAG = "TaskRemoteViewsFactory"
 
@@ -47,12 +47,41 @@ class TaskRemoteViewsFactory(private val context: Context) : RemoteViewsService.
         val displayText = "${item.title} (${item.currentCount} / ${item.targetCount})"
         views.setTextViewText(R.id.task_text, displayText)
 
-        // colorHex가 있으면 배경 혹은 텍스트 색상 등에 적용 가능
-        // 예: 텍스트 색상을 변경
-        //     views.setTextColor(R.id.task_text, Color.parseColor(item.colorHex))
-
-        return views
+        // 색상 적용
+        try {
+            val color = Color.parseColor(item.colorHex)
+            views.setInt(R.id.item_container, "setBackgroundColor", color)
+            
+            // 배경색 명암에 따른 텍스트 색상 조정
+            val brightness = (Color.red(color) * 0.299 + 
+                           Color.green(color) * 0.587 + 
+                           Color.blue(color) * 0.114)
+            if (brightness < 160) {
+                views.setTextColor(R.id.task_text, Color.WHITE)
+            } else {
+                views.setTextColor(R.id.task_text, Color.BLACK)
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error parsing color: ${item.colorHex}", e)
+            // 에러 시 기본 색상 사용
+        }
+        
+     // 중요 변경: 목표에 도달하지 않은 항목만 클릭 활성화
+    if (item.currentCount < item.targetCount) {
+        // 클릭 시 카운트 증가를 위한 fillInIntent 설정
+        val fillInIntent = Intent()
+        fillInIntent.putExtra("HABIT_TITLE", item.title)
+        
+        // 전체 항목을 클릭 가능하게 설정
+        views.setOnClickFillInIntent(R.id.item_container, fillInIntent)
+    } else {
+        // 이미 목표에 도달한 경우 클릭 효과 없음 (선택사항)
+        // 시각적으로 완료된 항목임을 표시하는 스타일 적용 가능
+        views.setInt(R.id.item_container, "setAlpha", 128) // 반투명 처리
     }
+    
+    return views
+}
 
     override fun getLoadingView(): RemoteViews? = null
 
@@ -71,11 +100,9 @@ class TaskRemoteViewsFactory(private val context: Context) : RemoteViewsService.
             Context.MODE_PRIVATE
         )
  
-        // Flutter에서 prefs.setString('tasks', jsonString)을 하면
-        // 안드로이드 내부적으로는 "flutter.tasks"로 저장될 가능성이 큼.
-        // (버전에 따라 직접 "tasks"로 저장될 수도 있으니 확인 필요)
         val tasksString = prefs.getString("flutter.tasks", "") ?: ""
-       Log.d(TAG, "SharedPreferences data: $tasksString")
+        Log.d(TAG, "SharedPreferences data: $tasksString")
+        
         if (tasksString.isEmpty()) {
             habitList = emptyList()
             return
@@ -91,9 +118,11 @@ class TaskRemoteViewsFactory(private val context: Context) : RemoteViewsService.
                 val targetCount = jsonObj.optInt("targetCount", 0)
                 val currentCount = jsonObj.optInt("currentCount", 0)
                 val colorHex = jsonObj.optString("colorHex", "#FFFFFF")
+                val id = jsonObj.optString("id", "")
 
                 tempList.add(
                     HabitItem(
+                        id = id,
                         title = title,
                         targetCount = targetCount,
                         currentCount = currentCount,
@@ -113,6 +142,7 @@ class TaskRemoteViewsFactory(private val context: Context) : RemoteViewsService.
  * 위젯에서 쓸 간단한 Data Class
  */
 data class HabitItem(
+    val id: String,
     val title: String,
     val targetCount: Int,
     val currentCount: Int,

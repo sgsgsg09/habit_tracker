@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <application
         android:label="Simple Check Habits"
         android:name="${applicationName}"
@@ -44,13 +45,20 @@
                 <!-- Flutter에서 직접 브로드캐스트 보낼 때 사용할 액션 (선택사항) -->
                 <action android:name="com.example.habits_tracker.UPDATE_WIDGET" />
             </intent-filter>
+            
 
             <!-- 위젯 설정 정보 연결 (task_widget_info.xml) -->
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/task_widget_info" />
         </receiver>
-
+<receiver
+    android:name=".WidgetActionReceiver"
+    android:exported="false">
+    <intent-filter>
+        <action android:name="com.example.habits_tracker.INCREMENT_HABIT" />
+    </intent-filter>
+</receiver>
         <!-- RemoteViewsService 등록 -->
         <service
             android:name=".TaskWidgetService"
