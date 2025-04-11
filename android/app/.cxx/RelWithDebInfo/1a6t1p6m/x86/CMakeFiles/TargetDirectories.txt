@@ -1,0 +1,2 @@
+/Users/pc/GitHub/habits_tracker/android/app/.cxx/RelWithDebInfo/1a6t1p6m/x86/CMakeFiles/edit_cache.dir
+/Users/pc/GitHub/habits_tracker/android/app/.cxx/RelWithDebInfo/1a6t1p6m/x86/CMakeFiles/rebuild_cache.dir
