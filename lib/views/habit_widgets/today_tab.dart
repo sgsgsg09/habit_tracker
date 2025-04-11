@@ -3,10 +3,10 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:habits_tracker/models/habit_model.dart';
-import 'package:habits_tracker/themes/app_theme.dart';
-import 'package:habits_tracker/viewmodels/habit_view_model.dart';
-import 'package:habits_tracker/themes/app_palette.dart';
+import 'package:habits_tracker/habits/models/habit_model.dart';
+import 'package:habits_tracker/utils/themes/app_theme.dart';
+import 'package:habits_tracker/habits/viewmodels/habit_view_model.dart';
+import 'package:habits_tracker/utils/themes/app_palette.dart';
 import 'package:habits_tracker/views/commons/logic.dart';
 import 'package:habits_tracker/views/icon_data/get_icon_data.dart';
 import 'package:habits_tracker/views/widgets/habit_edit_page.dart';

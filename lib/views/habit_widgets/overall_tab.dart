@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:habits_tracker/models/habit_model.dart';
-import 'package:habits_tracker/themes/app_theme.dart';
-import 'package:habits_tracker/utils/add_helper.dart';
-import 'package:habits_tracker/utils/banner_ad_widget.dart';
-import 'package:habits_tracker/viewmodels/habit_view_model.dart';
+import 'package:habits_tracker/habits/models/habit_model.dart';
+import 'package:habits_tracker/utils/themes/app_theme.dart';
+import 'package:habits_tracker/utils/ads/add_helper.dart';
+import 'package:habits_tracker/utils/ads/banner_ad_widget.dart';
+import 'package:habits_tracker/habits/viewmodels/habit_view_model.dart';
 import 'package:habits_tracker/views/icon_data/get_icon_data.dart';
 
 import 'package:habits_tracker/views/widgets/habit_edit_page.dart';

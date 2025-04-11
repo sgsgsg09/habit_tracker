@@ -34,6 +34,33 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-6067483456795008~7626286103"/>
 
+        <!-- 위젯 리시버 등록 -->
+        <receiver
+            android:name=".TaskWidgetProvider"
+            android:label="Task Widget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <!-- Flutter에서 직접 브로드캐스트 보낼 때 사용할 액션 (선택사항) -->
+                <action android:name="com.example.widgetnoteapp.UPDATE_WIDGET" />
+            </intent-filter>
+
+            <!-- 위젯 설정 정보 연결 (task_widget_info.xml) -->
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/task_widget_info" />
+        </receiver>
+
+        <!-- RemoteViewsService 등록 -->
+        <service
+            android:name=".TaskWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.widget.RemoteViewsService" />
+            </intent-filter>
+        </service>
+
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

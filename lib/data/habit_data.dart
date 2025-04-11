@@ -1,8 +1,8 @@
 // data/habit_data.dart
 
-import 'package:habits_tracker/models/habit_model.dart';
-import 'package:habits_tracker/models/habit_record/habit_attempt.dart';
-import 'package:habits_tracker/models/habit_record/habit_record_model.dart';
+import 'package:habits_tracker/habits/models/habit_model.dart';
+import 'package:habits_tracker/habits/models/habit_record/habit_attempt.dart';
+import 'package:habits_tracker/habits/models/habit_record/habit_record_model.dart';
 
 // HabitModel mock 데이터 (10개)
 final List<HabitModel> mockHabits = [

@@ -1114,6 +1114,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable card_background
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1154,6 +1155,8 @@ drawable glance_switch_thumb_off_to_on
 drawable glance_switch_thumb_on
 drawable glance_switch_thumb_on_to_off
 drawable glance_switch_track
+drawable glassy_task_background
+drawable glassy_widget_background
 drawable gnt_outline_shape
 drawable gnt_rounded_corners_shape
 drawable googleg_disabled_color_18
@@ -1295,6 +1298,7 @@ id browser_actions_menu_view
 id buttonPanel
 id cache_measures
 id callMeasure
+id card_layout
 id carryVelocity
 id center
 id center_horizontal
@@ -1441,6 +1445,7 @@ id easeOut
 id east
 id edit_query
 id edit_text_id
+id empty_view
 id end
 id error_text_view
 id error_title_view
@@ -1626,6 +1631,8 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id task_list_view
+id task_text
 id template_medium
 id template_small
 id text
@@ -1662,6 +1669,7 @@ id visible
 id visible_removing_fragment_view_tag
 id west
 id wide
+id widget_title
 id withText
 id wrap
 id wrap_content
@@ -1920,6 +1928,7 @@ layout box_start_top_9children
 layout box_wrapwidth_expandheight
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout card_layout
 layout column_center_horizontal_bottom
 layout column_center_horizontal_center_vertical
 layout column_center_horizontal_null_0children
@@ -2917,6 +2926,8 @@ layout size_wrap_match
 layout size_wrap_wrap
 layout small_template_view_layout
 layout support_simple_spinner_dropdown_item
+layout task_item
+layout widget_layout
 mipmap ic_launcher
 mipmap launcher_icon
 raw glance_appwidget_keep
@@ -3540,3 +3551,4 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml gma_ad_services_config
 xml image_share_filepaths
+xml task_widget_info

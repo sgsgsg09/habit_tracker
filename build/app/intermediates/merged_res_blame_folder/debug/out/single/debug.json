@@ -1,50 +1,78 @@
 [
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/drawable-v21_background.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/drawable-v21/background.png"
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-xxxhdpi_launcher_icon.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-xxxhdpi/launcher_icon.png"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-xxxhdpi_launcher_icon.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-xxxhdpi/launcher_icon.png"
+        "merged": "com.example.habits_tracker.app-merged_res-61:/layout_card_layout.xml.flat",
+        "source": "com.example.habits_tracker.app-main-56:/layout/card_layout.xml"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/drawable-v21_launch_background.xml.flat",
-        "source": "com.example.habits_tracker.app-main-56:/drawable-v21/launch_background.xml"
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-mdpi_launcher_icon.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-mdpi/launcher_icon.png"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-hdpi_launcher_icon.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-hdpi/launcher_icon.png"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-xxhdpi_launcher_icon.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-xxhdpi/launcher_icon.png"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.example.habits_tracker.app-merged_res-61:/layout_widget_layout.xml.flat",
+        "source": "com.example.habits_tracker.app-main-56:/layout/widget_layout.xml"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-mdpi_launcher_icon.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-mdpi/launcher_icon.png"
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.example.habits_tracker.app-merged_res-61:/drawable_glassy_widget_background.xml.flat",
+        "source": "com.example.habits_tracker.app-main-56:/drawable/glassy_widget_background.xml"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-xxhdpi_launcher_icon.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-xxhdpi/launcher_icon.png"
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/drawable-v21_background.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/drawable-v21/background.png"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-hdpi_launcher_icon.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-hdpi/launcher_icon.png"
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/drawable-v21_launch_background.xml.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/drawable-v21/launch_background.xml"
     },
     {
-        "merged": "com.example.habits_tracker.app-merged_res-61:/mipmap-xhdpi_launcher_icon.png.flat",
-        "source": "com.example.habits_tracker.app-main-56:/mipmap-xhdpi/launcher_icon.png"
+        "merged": "com.example.habits_tracker.app-merged_res-61:/layout_task_item.xml.flat",
+        "source": "com.example.habits_tracker.app-main-56:/layout/task_item.xml"
+    },
+    {
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-xhdpi_launcher_icon.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-xhdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.habits_tracker.app-merged_res-61:/drawable_glassy_task_background.xml.flat",
+        "source": "com.example.habits_tracker.app-main-56:/drawable/glassy_task_background.xml"
+    },
+    {
+        "merged": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-merged_res-61:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/pc/.gradle/daemon/8.3/com.example.habits_tracker.app-main-56:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.habits_tracker.app-merged_res-61:/xml_task_widget_info.xml.flat",
+        "source": "com.example.habits_tracker.app-main-56:/xml/task_widget_info.xml"
+    },
+    {
+        "merged": "com.example.habits_tracker.app-merged_res-61:/drawable_card_background.xml.flat",
+        "source": "com.example.habits_tracker.app-main-56:/drawable/card_background.xml"
     }
 ]

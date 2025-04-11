@@ -1,8 +1,20 @@
 R_DEF: Internal format may change without notice
 local
 drawable background
+drawable card_background
+drawable glassy_task_background
+drawable glassy_widget_background
 drawable launch_background
+id card_layout
+id empty_view
+id task_list_view
+id task_text
+id widget_title
+layout card_layout
+layout task_item
+layout widget_layout
 mipmap ic_launcher
 mipmap launcher_icon
 style LaunchTheme
 style NormalTheme
+xml task_widget_info

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:2:5-37:19
+INJECTED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:2:5-64:19
 INJECTED from /Users/pc/GitHub/habits_tracker/android/app/src/debug/AndroidManifest.xml
 MERGED from [:google_mobile_ads] /Users/pc/GitHub/habits_tracker/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-13:19
 MERGED from [:google_mobile_ads] /Users/pc/GitHub/habits_tracker/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-13:19
@@ -51,8 +51,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pc/.
 	android:name
 		INJECTED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:1:1-49:12
-MERGED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:1:1-49:12
+ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:1:1-76:12
+MERGED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:1:1-76:12
 INJECTED from /Users/pc/GitHub/habits_tracker/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/pc/GitHub/habits_tracker/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/pc/GitHub/habits_tracker/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -153,19 +153,19 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/pc/.gradle/caches/t
 	xmlns:android
 		ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:1:11-69
 queries
-ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:43:5-48:15
+ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:70:5-75:15
 MERGED from [com.google.android.gms:play-services-ads-lite:23.6.0] /Users/pc/.gradle/caches/transforms-3/983d0f9a11d6cac5922cdb1dc928a64a/transformed/jetified-play-services-ads-lite-23.6.0/AndroidManifest.xml:35:5-68:15
 MERGED from [com.google.android.gms:play-services-ads-lite:23.6.0] /Users/pc/.gradle/caches/transforms-3/983d0f9a11d6cac5922cdb1dc928a64a/transformed/jetified-play-services-ads-lite-23.6.0/AndroidManifest.xml:35:5-68:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:44:9-47:18
+ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:71:9-74:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:45:13-72
+ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:72:13-72
 	android:name
-		ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:45:21-70
+		ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:72:21-70
 data
-ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:46:13-50
+ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:73:13-50
 	android:mimeType
-		ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:46:19-48
+		ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/main/AndroidManifest.xml:73:19-48
 uses-permission#android.permission.INTERNET
 ADDED from /Users/pc/GitHub/habits_tracker/android/app/src/debug/AndroidManifest.xml:6:5-66
 MERGED from [:google_mobile_ads] /Users/pc/GitHub/habits_tracker/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
