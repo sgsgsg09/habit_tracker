@@ -74,12 +74,7 @@ class TaskRemoteViewsFactory(private val context: Context) : RemoteViewsService.
         
         // 전체 항목을 클릭 가능하게 설정
         views.setOnClickFillInIntent(R.id.item_container, fillInIntent)
-    } else {
-        // 이미 목표에 도달한 경우 클릭 효과 없음 (선택사항)
-        // 시각적으로 완료된 항목임을 표시하는 스타일 적용 가능
-        views.setInt(R.id.item_container, "setAlpha", 128) // 반투명 처리
-    }
-    
+    } 
     return views
 }
 
