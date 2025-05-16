@@ -1,6 +1,6 @@
 <aside>
 
-  ![image](https://github.com/user-attachments/assets/7d3d7dcc-1347-46f7-a238-ac23067cad81){: width="20%" height="20%"}
+  ![image](https://github.com/user-attachments/assets/7d3d7dcc-1347-46f7-a238-ac23067cad81)
 
 Modern Todo (습관/일정 관리 앱)**
 
